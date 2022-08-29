@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+/* Header №1 */
+.container-body {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 8px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+
+  gap: 1rem;
+}
+
+.nav-menu li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* Логотип */
+
+.logo-bar {
+  display: grid;
+  align-items: center;
+  grid-template: 70px 1fr / 30% 70%;
+}
+
+.logo {
+  grid-column: 1;
+}
+
+.logo-travel {
+  z-index: -1;
+  top: 66.9px;
+  left: 60px;
+  margin-bottom: -3rem;
+  user-select: none;
+  pointer-events: none;
+  color: transparent;
+  text-shadow: 0.5px 1.5px 3px rgb(0, 255, 162);
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.logo-text {
+  z-index: 1;
+  color: #009efd;
+  background: linear-gradient(45deg, #2af598 0%, #009efd 100%);
+  -webkit-background-clip: text;
+  font-size: 1.7em;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.cheap-travel {
+  display: grid;
+  color: black;
+  font-size: 14px;
+  font-style: italic;
+
+  grid-row: 2;
+}
+
+/* Поисковик */
+
+.search {
+  display: grid;
+  margin-top: 30px;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+  padding: 9px 12px;
+  border-radius: 15px;
+  box-shadow: 0.5px 1.5px 3px 1.5px #e3e3e3;
+}
+
+.search input {
+  width: 800px;
+  height: 45px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.search button {
+  border: none;
+  background-color: transparent;
+}
+
+.search i {
+  color: #0095ff;
+  font-size: 1.2rem;
+}
+
+.fa-solid.fa-manifying-glass {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/* Иконки */
+
+.sort-bar {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-top: 3em;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 150px;
+  font-size: 0.9em;
+  gap: 0.5em;
+}
+
+.sort-bar i {
+  font-size: 2rem;
+}
+
+/* Строка брони отелей */
+
+
+
+/* Основные карточки */
+
+.container {
+  display: grid;
+  margin: 1rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.container-hotel {
+  width: 100%;
+  min-width: 300px;
+  font-size: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.7rem 1.3rem;
+  border-radius: 15px;
+  border: none;
+  color: #edfffb;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #2af598 0%, #009efd 100%);
+  /* -webkit-background-clip: text; */
+}
+
+.container-hotel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.star {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.container-hotel p {
+  line-height: 1.7em;
+}
+
+.subtitle-hotel {
+  padding-top: 0.6em;
+}
+
+/* Популярное */
+
+.container-popular {
+  width: 100%;
+  min-width: 300px;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+.headline-2 {
+  display: inline;
+  border-bottom: 5px solid rgb(255, 128, 0);
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.popular-img {
+  display: grid;
+  margin-top: 2rem;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 250px;
+  gap: 1rem;
+}
+
+.popular-img .main {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.popular-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fotter */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #dcdcdc;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.footer ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.left-area {
+  display: flex;
+  gap: 2rem;
+}
+
+.right-area {
+  display: flex;
+  gap: 2rem;
+}
