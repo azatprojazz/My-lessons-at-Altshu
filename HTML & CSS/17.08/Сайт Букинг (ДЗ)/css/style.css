@@ -4,18 +4,31 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
 }
 
-/* Header №1 */
-.container-body {
-  max-width: 1240px;
-  margin: auto;
-  padding: 0 8px;
+li {
+  list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+/* Header №1 */
 .navbar {
   display: flex;
   align-items: center;
@@ -51,30 +64,11 @@ body {
 }
 
 .logo-travel {
-  z-index: -1;
-  top: 66.9px;
-  left: 60px;
-  margin-bottom: -3rem;
-  user-select: none;
-  pointer-events: none;
-  color: transparent;
-  text-shadow: 0.5px 1.5px 3px rgb(0, 255, 162);
-  font-size: 1.7em;
-  font-weight: bold;
-}
-
-.logo-text {
-  z-index: 1;
-  color: #009efd;
-  background: linear-gradient(45deg, #2af598 0%, #009efd 100%);
-  -webkit-background-clip: text;
-  font-size: 1.7em;
-  font-weight: bold;
+  font-size: 2em;
+  font-weight: 700;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   -webkit-text-fill-color: transparent;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-background-clip: text;
 }
 
 .cheap-travel {
@@ -82,7 +76,6 @@ body {
   color: black;
   font-size: 14px;
   font-style: italic;
-
   grid-row: 2;
 }
 
@@ -102,7 +95,7 @@ body {
 }
 
 .search input {
-  width: 800px;
+  width: 820px;
   height: 45px;
   border: none;
   outline: none;
@@ -115,6 +108,7 @@ body {
 }
 
 .search i {
+  margin: 0 auto;
   color: #0095ff;
   font-size: 1.2rem;
 }
@@ -131,7 +125,7 @@ body {
   flex-flow: wrap;
   justify-content: space-between;
   max-width: 1400px;
-  margin-top: 3em;
+  margin-top: 3rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -149,15 +143,11 @@ body {
   font-size: 2rem;
 }
 
-/* Строка брони отелей */
-
-
-
 /* Основные карточки */
 
-.container {
+.main-container {
   display: grid;
-  margin: 1rem 0;
+  margin: 1rem auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
 }
@@ -280,4 +270,156 @@ h4 {
 .right-area {
   display: flex;
   gap: 2rem;
+}
+
+
+@media screen and (max-width: 1240px) {
+  .container {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav-menu {
+    grid-column: 1/5;
+    justify-content: space-around;
+  }
+
+  .logo-bar {
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-template-rows: repeat(2, 60%);
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  .cheap-travel {
+    grid-area: 1/2/1/2;
+    justify-self: center;
+  }
+
+  .search {
+    grid-area: 2/1/2/1;
+    margin: 0 0 0 24%;
+  }
+
+  .search input {
+    width: 69vw;
+  }
+
+  .sort-bar {
+  justify-content: space-around;
+  max-width: 100vw;
+  margin-top: 3.5rem;
+  padding-bottom: 0rem;
+  }
+
+  .sort-bar .icon:nth-last-child(n) {
+    padding-bottom: 1.3rem;
+  }
+
+  .sort-bar i {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    width: 7rem;
+    font-size: 0.7em;
+  }
+
+  .main-container {
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+    row-gap: 2;
+  }
+
+  .container-hotel {
+    max-width: 40vw;
+    font-size: 1rem;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn {
+    max-width: 30vw;
+    font-size: 0.8em;
+    padding: 0.5rem 1.1rem;
+    border-radius: 15px;
+    border: none;
+    color: #edfffb;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #2af598 0%, #009efd 100%);
+    /* -webkit-background-clip: text; */
+  }
+
+  .container-hotel img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+
+  .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  .star {
+    display: flex;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  .subtitle-hotel {
+    font-size: 1em;
+    padding-top: 0.6em;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+
+  .price {
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+  .container {
+  max-width: none;
+  }
+
+
+
+
+
+
 }
