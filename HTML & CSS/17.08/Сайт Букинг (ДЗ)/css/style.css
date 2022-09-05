@@ -224,8 +224,6 @@ h4 {
 }
 
 .headline-2 {
-  display: inline;
-  border-bottom: 5px solid rgb(255, 128, 0);
   font-size: 2.2em;
   font-weight: 600;
 }
@@ -361,13 +359,6 @@ h4 {
 }
 
 @media screen and (max-width: 781px) {
-  body {
-    max-width: 780px;
-  }
-
-  .container {
-    width: 75%;
-  }
   .navbar {
     display: none;
   }
@@ -436,19 +427,19 @@ h4 {
 
   .main-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
   .main-container .container-hotel {
-    max-width: 430px;
     width: 100%;
+    height: 100%;
     font-size: 0.9rem;
   }
 
   .main-container img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
   }
 
@@ -464,14 +455,17 @@ h4 {
 
   h4 {
     font-weight: 600;
+    font-size: 2em;
   }
 
   .star {
     display: flex;
+    font-size: 1.6rem;
     gap: 0.4rem;
   }
 
   .container-hotel p {
+    font-size: 1.5em;
     line-height: 1.7em;
   }
 
@@ -480,7 +474,7 @@ h4 {
   }
 
 .btn {
-  font-size: 0.7em;
+  font-size: 1rem;
 }
 
 .popular-img {
