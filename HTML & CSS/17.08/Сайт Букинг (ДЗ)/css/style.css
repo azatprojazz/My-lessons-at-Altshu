@@ -51,6 +51,10 @@ a {
   color: black;
 }
 
+.address {
+  margin: 0 0 0 1rem;
+}
+
 /* Логотип */
 
 .logo-bar {
@@ -237,7 +241,7 @@ h4 {
   gap: 1rem;
 }
 
-.popular-img .main {
+.popular-img {
   grid-column: span 3;
   grid-row: span 2;
 }
@@ -338,7 +342,7 @@ h4 {
   grid-auto-rows: 180px;
 }
 
-.popular-img .main {
+.popular-img {
   grid-column: span 2;
   grid-row: span 2;
 }
@@ -481,7 +485,7 @@ h4 {
   grid-auto-rows: 180px;
 }
 
-.popular-img .main {
+.popular-img {
   grid-column: span 2;
   grid-row: span 2;
 }
