@@ -431,14 +431,18 @@ h4 {
     gap: 1.5rem;
   }
 
-  .main-container .container-hotel {
-    width: 100%;
+  .main-container {
+    width: 150vw;
     height: 100%;
     font-size: 0.9rem;
   }
 
+  .container-hotel {
+
+  }
+
   .main-container img {
-  width: 100%;
+  width: 150%;
   height: 400px;
   object-fit: cover;
   }
