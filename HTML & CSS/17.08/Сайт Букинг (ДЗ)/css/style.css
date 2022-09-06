@@ -241,7 +241,7 @@ h4 {
   gap: 1rem;
 }
 
-.popular-img {
+.popular-img .main{
   grid-column: span 3;
   grid-row: span 2;
 }
@@ -288,7 +288,7 @@ h4 {
   }
 
   .nav-menu {
-    grid-column: 1/5;
+    grid-column: 1/4;
     justify-content: space-around;
   }
 
@@ -329,7 +329,7 @@ h4 {
   }
 
   .icon {
-    width: 7rem;
+    width: 6.9rem;
     font-size: 0.7em;
   }
 
@@ -342,7 +342,7 @@ h4 {
   grid-auto-rows: 180px;
 }
 
-.popular-img {
+.popular-img .main {
   grid-column: span 2;
   grid-row: span 2;
 }
