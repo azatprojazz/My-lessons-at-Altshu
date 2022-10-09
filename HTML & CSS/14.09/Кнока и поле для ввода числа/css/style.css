@@ -29,7 +29,6 @@ body {
 
 
 .btn {
-  flex-shrink: 0;
   margin-right: 5px;
   padding: 10px;
   transition: all .2s linear;
@@ -40,7 +39,6 @@ body {
 }
 
 .block-input {
-  flex-shrink: 0;
   width: 230px;
   padding: 10px;
   transition: all .2s linear;
