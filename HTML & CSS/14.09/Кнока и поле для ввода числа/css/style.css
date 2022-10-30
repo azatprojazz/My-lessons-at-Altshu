@@ -5,11 +5,10 @@
   font-family: 'Trebuchet MS', sans-serif;
 }
 
-body {
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   height: 100vh;
   background-image: url('../img/pic 1.jpg');
   background-repeat: no-repeat;
