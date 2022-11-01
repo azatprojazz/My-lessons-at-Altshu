@@ -1,21 +1,13 @@
-// Цель домашнего задания:
-// Узнать, как запускать код JS
-// Поработать с консолью
-// Научиться объявлять переменную
-// Научиться задавать значения переменной
-// Правильно называть переменные
-
-// Что входит в задание
-// Типы данных JS
-// Работа с консолью
-// Нейминг переменных
-
 let myAge = 30;
+let ageMyBestFriend = 29;
+let myBirthDay = 1992;
 let currentYear = 2022;
+let rublePerDollar = 61.43;
 
 const myName = 'Азат';
-const mySchool = 'Альтшу';
+const myBestFriendName = 'Макс';
 const myCity = 'Санкт-Петербург';
-const codeStudy = 'JavaScript';
+const capitalMyCountry = 'Москва';
+const descriptionOfMe = 'ленивый';
 
-console.log(`Меня зовут ${myName}, мне ${myAge} лет. Живу в ${myCity}е, и обучаюсь в ${mySchool}. Хочу научиться кодить на ${codeStudy} в ${currentYear} году`);
+console.log(`Меня зовут ${myName}, мне ${myAge} лет. Я из города ${myCity} и я ${descriptionOfMe}.`);
