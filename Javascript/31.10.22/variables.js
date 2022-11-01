@@ -11,10 +11,11 @@
 // Нейминг переменных
 
 let myAge = 30;
+let currentYear = 2022;
 
 const myName = 'Азат';
 const mySchool = 'Альтшу';
 const myCity = 'Санкт-Петербург';
 const codeStudy = 'JavaScript';
 
-console.log(`Меня зовут ${myName}, мне ${myAge} лет. Живу в ${myCity}е, и обучаюсь в ${mySchool}. Хочу научиться ${codeStudy}`);
+console.log(`Меня зовут ${myName}, мне ${myAge} лет. Живу в ${myCity}е, и обучаюсь в ${mySchool}. Хочу научиться кодить на ${codeStudy} в ${currentYear} году`);
