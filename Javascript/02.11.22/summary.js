@@ -27,6 +27,6 @@ console.log(fiveNum <= tenNum);
 console.log(fiveNum == tenNum);
 console.log(fiveNum != tenNum);
 
-console.log('fiveNum');
+console.log("fiveNum");
 console.log('fiveNum');
 console.log(`fiveNum`);
