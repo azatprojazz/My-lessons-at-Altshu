@@ -1,6 +1,9 @@
 let fiveNum = 5;
 let fiveStr = '5';
 let fiveWord = 'пять';
+let dubbleQuote = '""';
+let oneQuote = "''";
+let backticQuote = "``";
 
 const tenNum = 10;
 const tenStr = '10';
@@ -27,6 +30,6 @@ console.log(fiveNum <= tenNum);
 console.log(fiveNum == tenNum);
 console.log(fiveNum != tenNum);
 
-console.log("fiveNum");
-console.log('fiveNum');
-console.log(`fiveNum`);
+console.log(dubbleQuote);
+console.log(oneQuote);
+console.log(backticQuote);
