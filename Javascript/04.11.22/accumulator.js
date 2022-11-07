@@ -7,12 +7,12 @@ for (let i = 0; i < accumulatorOdd.length; i += 2) {
   console.log(accumulatorOdd[i]);
 } */
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arr = [1, 223, -21, 44, 51, 62, -7, 48,-19, 10];
+let accumulatorOdd = [];
 
-let accumulatorOdd = arr;
-
-for (let i = 0; i < accumulatorOdd.length; i++) {
-  if (accumulatorOdd[i] % 2 == 1) {
-    console.log(accumulatorOdd[i]);
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 !== 0) {
+    accumulatorOdd.push(arr[i]);
   }
 }
+  console.log(accumulatorOdd);
