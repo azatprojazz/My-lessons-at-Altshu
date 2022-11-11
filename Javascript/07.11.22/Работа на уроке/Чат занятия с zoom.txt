@@ -1,0 +1,13 @@
+01:51:32	Ксения Сухова:	+
+01:51:48	Елена Луйк:	+3
+02:00:52	Анна Мурзина:	Халид скинь пожалуйста код в час сюда
+02:00:57	Анна Мурзина:	чат
+02:01:58	Khalid Ayubov:	function calcIdealWeight(gender = prompt('Напишите ваш пол'), height = +prompt('Напишите ваш рост')) {  console.log(gender, height)}calcIdealWeight();
+02:09:08	Анна Мурзина:	можно код плиз
+02:10:22	Khalid Ayubov:	function calcIdealWeight(gender = prompt('Напишите ваш пол'), height = +prompt('Напишите ваш рост')) {  if (gender === 'm') {    return (height - 100) * 1.15;  } else if (gender === 'f') {    return (height - 110) * 1.15;  }}let result = calcIdealWeight('m', 179);console.log(result)
+02:19:44	Khalid Ayubov:	function initials (firstname, lastname, surname) {  return `${lastname} ${firstname[0]}. ${surname[0]}.`}console.log(initials('Khalid', 'Ayubov', 'Isayevich'));
+02:32:35	Анна Мурзина:	скиньте решение кто писал сейчас задачу вместе с Халидом?
+02:59:24	Анна Мурзина:	+=
+02:59:30	Анна Мурзина:	и сколько штук
+02:59:32	Анна Мурзина:	может
+03:07:02	Анна Мурзина:	у меня вопрос

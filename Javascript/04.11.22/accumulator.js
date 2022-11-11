@@ -1,4 +1,4 @@
-let arr = [1, 223, -21, 44, 51, 62, -7, 48,-19, 10];
+let arr = [1, 223, -21, 44, 51, 62, -7, 48, -19, 10];
 let accumulatorOdd = [];
 
 for (let i = 0; i < arr.length; i++) {
@@ -6,4 +6,4 @@ for (let i = 0; i < arr.length; i++) {
     accumulatorOdd.push(arr[i]);
   }
 }
-  console.log(accumulatorOdd);
+console.log(accumulatorOdd);
